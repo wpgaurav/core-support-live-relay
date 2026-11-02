@@ -10,7 +10,7 @@ WordPress stays the source of truth: every message is saved by your site first, 
 
 You need Core Support 1.5.0-beta.6 or later with live chat turned on, a Cloudflare account, and a GitHub or GitLab account.
 
-1. **Make a secret.** In WordPress, open Core Support → Chat settings → Live chat connection and click **Generate a secret**. It fills in the Worker secret field and copies the secret.
+1. **Make a secret.** In WordPress, open Core Support → AI and Chat → Chat and Live Chat → Live chat connection and click **Generate a secret**. It fills in the Worker secret field and copies the secret.
 2. **Deploy the Worker.** Click the button below. Cloudflare copies this repository into your GitHub or GitLab account, then builds and deploys it to your Cloudflare account. Paste the secret when it asks for `LIVE_SECRET`.
 
    [![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/wpgaurav/core-support-live-relay)

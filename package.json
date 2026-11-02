@@ -11,7 +11,7 @@
   "cloudflare": {
     "bindings": {
       "LIVE_SECRET": {
-        "description": "The secret Core Support shares with this Worker: 32 to 200 characters, no spaces. Click **Generate a secret** under Core Support → Chat settings → Live chat connection and paste it here."
+        "description": "The secret Core Support shares with this Worker: 32 to 200 characters, no spaces. Click **Generate a secret** under Core Support → AI and Chat → Chat and Live Chat → Live chat connection and paste it here."
       }
     }
   }
