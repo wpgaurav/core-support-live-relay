@@ -1,0 +1,18 @@
+{
+  "name": "core-support-live-relay",
+  "private": true,
+  "description": "Cloudflare Worker that carries Core Support live chat over WebSockets, deployed to your own Cloudflare account.",
+  "license": "GPL-3.0-or-later",
+  "type": "module",
+  "scripts": {
+    "test": "node --test worker.test.mjs",
+    "test:dev": "node --test dev.test.mjs"
+  },
+  "cloudflare": {
+    "bindings": {
+      "LIVE_SECRET": {
+        "description": "The secret Core Support shares with this Worker: 32 to 200 characters, no spaces. Click **Generate a secret** under Core Support → Chat settings → Live chat connection and paste it here."
+      }
+    }
+  }
+}

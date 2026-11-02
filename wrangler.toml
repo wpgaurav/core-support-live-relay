@@ -1,0 +1,18 @@
+# Deploy with the Deploy to Cloudflare button in README.md, or: npx wrangler secret put LIVE_SECRET && npx wrangler deploy
+name = "core-support-live-relay"
+main = "worker.js"
+# 2026-04-07 or later: the runtime completes a WebSocket's closing handshake itself.
+compatibility_date = "2026-10-01"
+
+[[durable_objects.bindings]]
+name = "CONVERSATIONS"
+class_name = "Conversation"
+
+[[durable_objects.bindings]]
+name = "DESKS"
+class_name = "Desk"
+
+# SQLite-backed classes, the kind the Workers Free plan offers. Neither class stores anything.
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["Conversation", "Desk"]

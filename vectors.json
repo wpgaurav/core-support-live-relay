@@ -1,0 +1,95 @@
+{
+  "description": "Live relay vectors generated independently with Python hmac (tools/live-relay/README.md has the format); PHP and the Worker must both reproduce them.",
+  "publish": [
+    {
+      "secret": "synthetic-live-secret-0123456789abcdef",
+      "site": "example.com",
+      "timestamp": 1790400000,
+      "delivery_id": "3f2b8c1e-6d4a-4f7e-9b2c-1a2b3c4d5e6f",
+      "body_base64": "eyJ0eXBlIjoibWVzc2FnZSIsInRocmVhZCI6IjBiNmYyYTRlLTFjM2QtNGU1Zi04YTliLTBjMWQyZTNmNGE1YiIsImRhdGEiOnsibWVzc2FnZSI6eyJpZCI6NDEsImZyb20iOiJhZ2VudCIsIm5hbWUiOiJTYW0iLCJib2R5IjoiVHJ5IGl0IGFnYWluIG5vdy4iLCJhdCI6IjIwMjYtMDktMjYgMTA6MDA6MDAifX19",
+      "signature": "v1=05a05025e973830b641098b9ba8632e5239c92e6e24d59a7f971b68c9c0d9a4e"
+    },
+    {
+      "secret": "synthetic-live-secret-0123456789abcdef",
+      "site": "example.com/help",
+      "timestamp": 1790400000,
+      "delivery_id": "3f2b8c1e-6d4a-4f7e-9b2c-1a2b3c4d5e6f",
+      "body_base64": "eyJ0eXBlIjoibWVzc2FnZSIsInRocmVhZCI6IjBiNmYyYTRlLTFjM2QtNGU1Zi04YTliLTBjMWQyZTNmNGE1YiIsImRhdGEiOnsibWVzc2FnZSI6eyJpZCI6NDEsImZyb20iOiJhZ2VudCIsIm5hbWUiOiJTYW0iLCJib2R5IjoiVHJ5IGl0IGFnYWluIG5vdy4iLCJhdCI6IjIwMjYtMDktMjYgMTA6MDA6MDAifX19",
+      "signature": "v1=b825781743cf78ba5cdef907cef1df6395bf5fbfc5fcc9431627216e7e1de910"
+    },
+    {
+      "secret": "synthetic-live-secret-0123456789abcdef",
+      "site": "example.com",
+      "timestamp": 1790400123,
+      "delivery_id": "0123456789abcdef0123456789abcdef",
+      "body_base64": "eyJ0eXBlIjoic3RhdHVzIiwidGhyZWFkIjoiMGI2ZjJhNGUtMWMzZC00ZTVmLThhOWItMGMxZDJlM2Y0YTViIiwiZGF0YSI6eyJzdGF0dXMiOiJlbmRlZCIsImFnZW50X25hbWUiOiJab8OrIn19",
+      "signature": "v1=b6b7e0673954d3d66042d5a81f91eb9d937d61fabc06a6c4d8c6d556820379e5"
+    },
+    {
+      "secret": "synthetic-live-secret-0123456789abcdef",
+      "site": "example.com",
+      "timestamp": 1790400000,
+      "delivery_id": "empty-body-delivery-0001",
+      "body_base64": "",
+      "signature": "v1=d9a2406d564d6b26cdcb1913b76577042ab487e8b453961a0ae3aef842ea20f9"
+    },
+    {
+      "secret": "another secret with spaces, also 32+ chars",
+      "site": "example.com",
+      "timestamp": 1790400000,
+      "delivery_id": "3f2b8c1e-6d4a-4f7e-9b2c-1a2b3c4d5e6f",
+      "body_base64": "eyJ0eXBlIjoidGVzdCIsInRocmVhZCI6IiIsImRhdGEiOnt9fQ==",
+      "signature": "v1=2f5beb807836bf087da6390f06b3a708ce9e6af715e9e263ac233e1baed08052"
+    }
+  ],
+  "tokens": [
+    {
+      "secret": "synthetic-live-secret-0123456789abcdef",
+      "claims": {
+        "role": "visitor",
+        "site": "example.com",
+        "thread": "0b6f2a4e-1c3d-4e5f-8a9b-0c1d2e3f4a5b",
+        "origin": "https://example.com",
+        "name": "",
+        "exp": 1790400300
+      },
+      "token": "v1.eyJyb2xlIjoidmlzaXRvciIsInNpdGUiOiJleGFtcGxlLmNvbSIsInRocmVhZCI6IjBiNmYyYTRlLTFjM2QtNGU1Zi04YTliLTBjMWQyZTNmNGE1YiIsIm9yaWdpbiI6Imh0dHBzOi8vZXhhbXBsZS5jb20iLCJuYW1lIjoiIiwiZXhwIjoxNzkwNDAwMzAwfQ.1e20a60a3950fcf21e81fc93e681240c32fd4714376c705f20c254bb3c641fda"
+    },
+    {
+      "secret": "synthetic-live-secret-0123456789abcdef",
+      "claims": {
+        "role": "visitor",
+        "site": "example.com",
+        "thread": "0b6f2a4e-1c3d-4e5f-8a9b-0c1d2e3f4a5b",
+        "origin": "https://shop.example.net",
+        "name": "",
+        "exp": 1790400300
+      },
+      "token": "v1.eyJyb2xlIjoidmlzaXRvciIsInNpdGUiOiJleGFtcGxlLmNvbSIsInRocmVhZCI6IjBiNmYyYTRlLTFjM2QtNGU1Zi04YTliLTBjMWQyZTNmNGE1YiIsIm9yaWdpbiI6Imh0dHBzOi8vc2hvcC5leGFtcGxlLm5ldCIsIm5hbWUiOiIiLCJleHAiOjE3OTA0MDAzMDB9.cbc6394dff3fdb6682c92ea691c734b8ce935b466b9b072a5d699bdf3ba425fc"
+    },
+    {
+      "secret": "synthetic-live-secret-0123456789abcdef",
+      "claims": {
+        "role": "agent",
+        "site": "example.com",
+        "thread": "",
+        "origin": "https://example.com",
+        "name": "Sam",
+        "exp": 1790400300
+      },
+      "token": "v1.eyJyb2xlIjoiYWdlbnQiLCJzaXRlIjoiZXhhbXBsZS5jb20iLCJ0aHJlYWQiOiIiLCJvcmlnaW4iOiJodHRwczovL2V4YW1wbGUuY29tIiwibmFtZSI6IlNhbSIsImV4cCI6MTc5MDQwMDMwMH0.deccae15a4101974ea33eb3a71411288f4740383d33a8edf42e2639fcb03c9e5"
+    },
+    {
+      "secret": "synthetic-live-secret-0123456789abcdef",
+      "claims": {
+        "role": "agent",
+        "site": "example.com/help",
+        "thread": "0b6f2a4e-1c3d-4e5f-8a9b-0c1d2e3f4a5b",
+        "origin": "https://example.com",
+        "name": "Zoë Ångström 😀",
+        "exp": 1790400300
+      },
+      "token": "v1.eyJyb2xlIjoiYWdlbnQiLCJzaXRlIjoiZXhhbXBsZS5jb20vaGVscCIsInRocmVhZCI6IjBiNmYyYTRlLTFjM2QtNGU1Zi04YTliLTBjMWQyZTNmNGE1YiIsIm9yaWdpbiI6Imh0dHBzOi8vZXhhbXBsZS5jb20iLCJuYW1lIjoiWm9cdTAwZWIgXHUwMGM1bmdzdHJcdTAwZjZtIFx1ZDgzZFx1ZGUwMCIsImV4cCI6MTc5MDQwMDMwMH0.5e76fcc379c9c17cbaf6e156f261e8a9633c2a3c49c0b90e3f9e75b9c357b1e4"
+    }
+  ]
+}

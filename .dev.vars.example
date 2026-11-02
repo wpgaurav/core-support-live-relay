@@ -1,0 +1,2 @@
+# The secret shared with Core Support → Chat settings → Live chat connection: 32 to 200 characters, no spaces.
+LIVE_SECRET=
